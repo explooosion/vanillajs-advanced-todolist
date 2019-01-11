@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+/* form filter */
+.form-filter {
+  display: flex;
+  margin: .75rem;
+}
+
+.form-filter label {
+  padding: .25rem 1rem;
+  background-color: #bbb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-filter label:first-of-type {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.form-filter label:last-of-type {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.form-filter input[type=radio]:checked + label {
+  background-color: #444;
+}
+
+.form-filter input[type=radio] {
+  display: none;
+}
+
+/* form list */
+.form-list {
+  margin-top: .5rem;
+  min-width: 200px;
+}
+
+.form-list tr.hide {
+  display: none;
+}
+
+.form-list td {
+  position: relative;
+}
+
+.form-list .form-edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 17px;
+  opacity: 0;
+}
+
+.form-list .form-edit:focus {
+  width: initial;
+  opacity: 1;
+}
+
+.form-list label {
+  user-select: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advanced Todolist</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="form">
+        <!-- title -->
+        <h1 class="title">Advanced TodoList</h1>
+
+        <!-- input box and add button -->
+        <div class="form-control">
+            <input class="form-input" type="text" value="" />
+            <button class="form-add" onclick="addItem()">Add</button>
+        </div>
+
+        <!-- view mode -->
+        <div class="form-filter">
+            <input id="filter-all" name="filter" type="radio" value="all" checked />
+            <label class="filter-label" for="filter-all">All</label>
+            <input id="filter-done" name="filter" type="radio" value="done" />
+            <label for="filter-done">Done</label>
+            <input id="filter-todo" name="filter" type="radio" value="todo" />
+            <label for="filter-todo">Todo</label>
+        </div>
+
+        <!-- list tabel -->
+        <table class="form-list">
+            <!-- <tr key="xxx">
+                <td>
+                    <input class="form-check" type="checkbox">
+                    <label onclick="updateItem(xxx)">Buy the cake.</label>
+                    <button class="form-delete" onclick="removeItem(xxx)">Delete</button>
+                </td>
+            </tr> -->
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
